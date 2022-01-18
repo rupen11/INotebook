@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Home */
+/* .maincontainer::after {
+  content: "";
+  background: url("./img/bg.jpg") no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+}
+.maincontainer::before {
+  content: "";
+  background: white;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  z-index: -1;
+} */
+.maincontainer .innercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+.maincontainer .innercontainer .welcomeText {
+  margin-top: 2rem;
+  color: #004d66;
+  font-weight: 600;
+}
+.maincontainer .innercontainer .text {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgb(15, 15, 15);
+}
+.maincontainer .innercontainer .maintext {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: #004d66;
+  padding: 0.4rem 0;
+}
+.maincontainer .innercontainer .text > span {
+  font-weight: 900;
+  color: #004d66;
+}
+.maincontainer .innercontainer .btnStart {
+  font-size: 0.9rem;
+  padding: 0.7rem 1.3rem 0.7rem 1rem;
+  outline: none;
+  transition: 0.3s;
+  border: 1px solid #004d66;
+  color: white;
+  background-color: #004d66;
+}
+.maincontainer .innercontainer .btnStart:hover {
+  background-color: white;
+  border: 1px solid #004d66;
+  color: #004d66;
+}
+
+.featurescontainer {
+  margin-top: 5rem;
+  padding: 3rem 0;
+  background-color: #004d66;
+  color: rgb(233, 233, 233);
+}
+
+.featurescontainer .featuresheading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featurescontainer .box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.featurescontainer .box .items {
+  padding: 1rem;
+  background-color: #003f53;
+  box-shadow: 0 0 3px 0 #004d66;
+  border-radius: 0.2rem;
+  width: 25rem;
+  margin: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.featurescontainer .box .items:hover {
+  box-shadow: 1px 1px 3px 1px #003f53;
+}
+
+/* Add notes */
+.addNotes {
+  margin-top: 1rem;
+  background-color: rgb(247, 247, 247);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.addNotes .icons {
+  padding: 1rem 0;
+}
+
+#myForm,
+#myUpdateForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#allthing {
+  width: 100%;
+}
+
+#myForm .myInput,
+#myUpdateForm .myInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem 0.4rem;
+  width: 100%;
+}
+
+.buttonAdd {
+  background-color: #004d66 !important;
+  padding: 0.3rem 1rem !important;
+  margin: 0.5rem 0 !important;
+  outline: none !important;
+}
+
+.buttonCancel {
+  margin-right: 1rem !important;
+  outline: none !important;
+}
+
+.buttonUpdate {
+  background-color: #6fa839 !important;
+  outline: none !important;
+}
+
+/* Notes */
+.pro-icons {
+  margin: 0 0.3rem;
+  cursor: pointer;
+}
+
+.notes::-webkit-scrollbar {
+  width: 0rem;
+}
+
+.notes::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+.notes {
+  padding-top: 1rem;
+  height: 100vh;
+  overflow: scroll;
+}
+
+.notes .note {
+  background-color: rgb(247, 247, 247);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+}
+
+.notes .removeFav {
+  background-color: rgb(233, 233, 233);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(95, 95, 95);
+}
+
+.notes .removeFav:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.notes p {
+  margin: 1rem 0 0 0;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.notes h6 {
+  color: rgb(95, 95, 95);
+}
+
+.notes .noteincons {
+  padding: 1rem 0 0 0;
+  display: none;
+}
+
+.notes .note:hover .noteincons {
+  display: block;
+  transition: 3s;
+}
+
+.notes .notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes .notfound img {
+  width: 15rem;
+  margin-top: 5rem;
+}
+
+.notes .notfound h4 {
+  margin: 3rem 0 1rem 0;
+  color: rgb(95, 95, 95);
+}
+
+.btnedit {
+  display: block !important;
+  margin: 1rem auto !important;
+  color: rgb(233, 233, 233) !important;
+  background-color: #004d66 !important;
+  padding: 0.2rem 1rem !important;
+  border: 1px solid #004d66 !important;
+  outline: none !important;
+}
+
+.btnedit:hover {
+  color: #004d66 !important;
+  background-color: rgb(219, 219, 219) !important;
+}
+
+/* Profile */
+
+.userdetail {
+  padding-top: 1rem;
+}
+
+.userdetail .profile {
+  background-color: rgb(247, 247, 247);
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+.userdetail .profile table {
+  font-size: 0.8rem;
+}
+
+.userdetail .profile-list {
+  padding: 0;
+}
+
+.userdetail .profile-list li {
+  list-style: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+}
+
+.userdetail .profile-list li:hover {
+  background-color: white;
+}
+
+/*********************************************************************** Overly address */
+.edit_overly {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 0%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+  font-family: var(--font-classic);
+}
+
+.edit_overly .edit_innerbox {
+  background-color: white;
+  height: 100%;
+  width: 25%;
+  padding: 1rem 2rem;
+}
+
+.edit_overly .edit_innerbox .myeditprofileform {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  padding: 3rem 0;
+  border-top: 1px solid gray;
+}
+
+.edit_overly .edit_innerbox .myeditprofileform label {
+  text-transform: capitalize;
+  color: rgb(184, 184, 184);
+  font-size: 0.8rem;
+}
+
+.edit_overly .edit_innerbox .myeditprofileform .myEditProfileInput {
+  padding: 0.3rem 0;
+  font-size: 0.8rem;
+  color: var(--green);
+  border-top: none;
+  border-bottom: 1px solid var(--green);
+  border-left: none;
+  border-right: none;
+  outline: none;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.edit_overly .edit_innerbox .edit_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit_overly .edit_innerbox .edit_heading {
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: right;
+  margin: 0;
+}
+
+.active_edit.edit_overly {
+  width: 100%;
+}
+
+.active_edit .edit_innerbox {
+  animation: edit;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
+}
+
+@keyframes edit {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+/* Login */
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+#loginForm h3 {
+  color: rgb(95, 95, 95);
+}
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 0.4rem;
+  padding: 2rem;
+  box-shadow: 0 0 6px 1px gray;
+  width: 40%;
+}
+@media only screen and (max-width: 600px) {
+  #loginForm {
+    width: 100%;
+  }
+}
+#loginForm .myLoginInput {
+  border: 1px solid white;
+  padding: 0.5rem 0.3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  font-size: 0.9rem;
+  border: 1px solid rgb(233, 233, 233);
+}
+#loginForm .myLoginInput:focus {
+  box-shadow: 0 0 1px 1px gray;
+}
+#loginForm .buttonLogin {
+  background-color: #004d66 !important;
+  outline: none !important;
+}
+#loginForm p {
+  font-size: 0.8rem;
+  color: rgb(95, 95, 95);
+  text-align: center;
+  margin: 0;
+}
+#loginForm .signupLink {
+  margin-top: 1rem;
+}
+#loginForm .forgotPassLink {
+  margin-bottom: 0.8rem;
+}
+
+/* Signup */
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+#signupForm h3 {
+  color: rgb(95, 95, 95);
+}
+#signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 0.4rem;
+  padding: 2rem;
+  box-shadow: 1px 1px 6px 1px gray;
+  width: 40%;
+}
+@media only screen and (max-width: 600px) {
+  #signupForm {
+    width: 100%;
+  }
+}
+#signupForm .mySignupInput {
+  border: 1px solid white;
+  padding: 0.5rem 0.3rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  outline: none;
+  font-size: 0.9rem;
+  border: 1px solid rgb(233, 233, 233);
+}
+#signupForm .mySignupInput:focus {
+  box-shadow: 0 0 1px 1px gray;
+}
+#signupForm .buttonSignup {
+  background-color: #004d66 !important;
+  outline: none !important;
+}
+#signupForm p {
+  font-size: 0.8rem;
+  color: rgb(95, 95, 95);
+  text-align: center;
+  margin: 0;
+}
+#signupForm .loginLink {
+  margin-top: 1rem;
+}
+
+.buttonHome {
+  background-color: #004d66 !important;
+  outline: none !important;
+}
+
+.buttonHome a {
+  color: white;
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorContainer img {
+  width: 15rem;
+  margin-top: 5rem;
+}
+
+.errorContainer p {
+  font-size: 0.9rem;
+  color: rgb(184, 184, 184);
+  text-align: center;
+  margin: 1rem 0 1rem 0;
+}
+
+.errorContainer h4 {
+  color: rgb(95, 95, 95);
+  margin-top: 2rem;
+}
